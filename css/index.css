@@ -1,0 +1,50 @@
+#container-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+#container {
+  background-color: #000c29;
+  height: 100%;
+  width: 100%;
+}
+.container-part {
+  height: 100%;
+  margin: 0 0.4333%;
+  float: left;
+}
+.container-left {
+  width: 22.91666667%;
+}
+.container-center {
+  width: 51.5625%;
+}
+.container-right {
+  width: 22.91666667%;
+}
+.container-title {
+  display: table;
+  height: 100%;
+  width: 100%;
+  background: url('../img/line1.png') center center no-repeat;
+  background-size: contain;
+  text-align: center;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.container-center .container-title {
+  background-image: url('../img/line2.png');
+}
+.container-title-text {
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  background: -webkit-linear-gradient(top, #e6e9fa, #8a8c99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

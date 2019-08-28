@@ -1,0 +1,294 @@
+a,
+span,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+textarea,
+input,
+button,
+select,
+img,
+html,
+body,
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  position: relative;
+}
+.clear:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  width: 100%;
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  background-color: #ebecf1;
+  font-size: 14px;
+  font-family: Arial, 'Microsoft YaHei', SimHei;
+}
+@media only screen and (min-width: 7000px) {
+  html,
+  body {
+    fonts-size: 24px;
+  }
+}
+@media only screen and (max-width: 7000px) {
+  html,
+  body {
+    fonts-size: 21px;
+  }
+}
+@media only screen and (max-width: 6000px) {
+  html,
+  body {
+    fonts-size: 20px;
+  }
+}
+@media only screen and (max-width: 5000px) {
+  html,
+  body {
+    fonts-size: 19px;
+  }
+}
+@media only screen and (max-width: 4000px) {
+  html,
+  body {
+    fonts-size: 18px;
+  }
+}
+@media only screen and (max-width: 3000px) {
+  html,
+  body {
+    fonts-size: 17px;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  html,
+  body {
+    fonts-size: 16px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  html,
+  body {
+    fonts-size: 14px;
+  }
+}
+body {
+  overflow-y: hidden;
+}
+#container {
+  overflow: auto;
+  height: 100%;
+}
+/*.part:nth-child(1){margin-top:0}*/
+.part .part-title {
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  border-top-left-radius: 30px;
+  /*padding-right:76px;*/
+  background-size: contain;
+  z-index: 100;
+}
+.part .part-title .part-title-left {
+  background-color: #fff;
+  overflow: hidden;
+  float: left;
+  padding: 2px 0 0 20px;
+}
+.part .part-title .part-title-right {
+  height: 31px;
+  width: 76px;
+  float: left;
+  background: url('../img/part-title-r.png') right center no-repeat;
+}
+.part .part-title .part-title-left img {
+  float: left;
+  margin-top: 9px;
+}
+.part .part-title .part-title-left span {
+  line-height: 30px;
+  float: left;
+  margin-left: 10px;
+  fonts-size: 1rem;
+  color: #707580;
+}
+.part .part-content {
+  box-sizing: border-box;
+  height: 100%;
+}
+.part .part-title-right-line {
+  height: 2px;
+  position: absolute;
+  left: 30px;
+  right: 60px;
+  background-color: #737883;
+  opacity: 0.6;
+  top: -2px;
+}
+/* 定义 */
+@fonts-face {
+  fonts-family: 'LED';
+  src: url('../fonts/fontawesome-webfont.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/fontawesome-webfont.woff') format('woff'), /* Modern Browsers */ url('../fonts/fontawesome-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/fontawesome-webfont.svg#MicrosoftYaHei') format('svg');
+  /* Legacy iOS */
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+#container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+#container::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+.part {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.part-padding {
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+.part-col-1 {
+  width: 8.33%;
+}
+.part-col-2 {
+  width: 16.66%;
+}
+.part-col-3 {
+  width: 25%;
+}
+.part-col-4 {
+  width: 33.33%;
+}
+.part-col-5 {
+  width: 41.66%;
+}
+.part-col-6 {
+  width: 50%;
+}
+.part-col-7 {
+  width: 58.33%;
+}
+.part-col-8 {
+  width: 66.66%;
+}
+.part-col-9 {
+  width: 75%;
+}
+.part-col-10 {
+  width: 83.33%;
+}
+.part-col-11 {
+  width: 91.33%;
+}
+.part-col-12 {
+  width: 100%;
+}
+.part-row-1 {
+  height: 8.33%;
+}
+.part-row-2 {
+  height: 16.66%;
+}
+.part-row-3 {
+  height: 25%;
+}
+.part-row-4 {
+  height: 33.33%;
+}
+.part-row-5 {
+  height: 41.66%;
+}
+.part-row-6 {
+  height: 50%;
+}
+.part-row-7 {
+  height: 58.33%;
+}
+.part-row-8 {
+  height: 66.66%;
+}
+.part-row-9 {
+  height: 75%;
+}
+.part-row-10 {
+  height: 83.33%;
+}
+.part-row-11 {
+  height: 91.33%;
+}
+.part-row-12 {
+  height: 100%;
+}
+.part-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+.part-content::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 2px;
+}
+.part-content {
+  border: 1px solid #a1c9fa;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
